@@ -1,0 +1,159 @@
+body{
+  width: 100%;
+  height: 100%;
+
+}
+
+.navbar {
+  font-weight: bold;
+}
+
+#bg-currencies {
+  height: 300px;
+  width: 100%;
+  background-image: url("../assets/img/wallpaperbetter1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.box{
+  height: 100%;
+  margin: 0px 10px;
+}
+
+.content #home-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  position: relative;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+.form-check input{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 7px 7px 0 0;
+}
+
+.card-header{
+  text-transform: uppercase;
+  font-weight:bold;
+  height: 30px;
+}
+.card-title{
+  font-weight:bold;
+}
+
+.coinDetails{
+text-align: center;
+position: absolute;
+height: 120px;
+width: 120px;
+right: 0;
+bottom: 0;
+font-family: 'Trebuchet MS';
+animation: slide 0.3s ;
+}
+
+.coinDetails img{
+  width: 40px;
+  height:40px ;
+}
+
+@keyframes slide {
+  from {right: 150px;}
+  to   {right: 0;}
+}
+
+
+.content span:not(:first-child){
+  display: none;
+}
+
+#about-content h3{
+  text-align: center;
+  margin-top: 10px;
+  color: #0972e2;
+}
+#about-content p{
+  width: 100%;
+  border: 2px solid #0972e2;
+  margin: 10px 20px 0 0;
+  padding: 5px;
+  font-family: Arial;
+  font-weight: bold;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+#about-content ,.info{
+  display: flex;
+  font-weight: bold;
+}
+
+
+#about-content > div{
+  width: 50%;
+  border-bottom: #0972e2 1px solid;
+  margin: 50px;
+}
+
+
+li a:hover{
+  color: red;
+} 
+
+.paragraph h6{
+  color: #0972e2;
+  font-weight: bold;
+}
+
+.info img{
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 100px;
+  transform: translatey(-10px);
+}
+
+
+@media screen and (max-width:971px) {
+
+  #about-content , .info{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-content >div{
+    width: 100%;
+    margin:15px auto;
+   
+  }
+  .info table {
+   margin: auto;
+   text-align: center;
+  }
+
+  .info img {
+    margin: auto;
+    border-radius: 100px;
+  }
+
+  li a{
+    margin-top: 10px;
+  }
+
+  .report {
+    padding: 10px;
+  }
+}
